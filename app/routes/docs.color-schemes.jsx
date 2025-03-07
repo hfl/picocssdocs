@@ -23,7 +23,7 @@ export const meta = () => [
 export default function ColorSchemes() {
   const { pageTheme, switchTheme } = usePage();
   const isThemeDark = pageTheme === "dark";
-  const changeThemeLabel = isThemeDark ? "Turn off dark mode" : "Turn on dark mode";
+  const changeThemeLabel = isThemeDark ? "关闭暗色模式" : "开启暗色模式";
   const introductionRef = useRef();
   const usageRef = useRef();
   const exampleRef = useRef();
@@ -32,8 +32,8 @@ export default function ColorSchemes() {
     <>
       {/* Header */}
       <Header
-        title="Color schemes"
-        description="Pico CSS comes with both Light and Dark color schemes, automatically enabled based on user preferences."
+        title="色系"
+        description="Pico CSS 自带两种色系——亮色（Light）和暗色（Dark），自动启用用户配置。"
       />
 
       {/* Table of content */}
@@ -41,17 +41,17 @@ export default function ColorSchemes() {
         data={[
           {
             anchor: "",
-            title: "Introduction",
+            title: "简介",
             ref: introductionRef,
           },
           {
             anchor: "usage",
-            title: "Usage",
+            title: "用法",
             ref: usageRef,
           },
           {
             anchor: "example",
-            title: "Card example",
+            title: "Card 范例",
             ref: exampleRef,
           },
         ]}
@@ -61,9 +61,9 @@ export default function ColorSchemes() {
       <Content>
         <section ref={introductionRef}>
           <p>
-            The default color scheme is Light. The Dark scheme is automatically enabled if the user
-            has dark mode enabled{" "}
-            <Code display="inline" language="css">{`prefers-color-scheme: dark;`}</Code>.
+            默认色彩方案为亮色（Light）色系。如果用户使用{" "}
+            <Code display="inline" language="css">{`prefers-color-scheme: dark;`}</Code>
+            启用暗色（Dark）色系，则该色系自动启用。
           </p>
           <article aria-label="Theme switcher" id="theme-switcher">
             <button className="contrast" onClick={switchTheme}>
@@ -74,17 +74,17 @@ export default function ColorSchemes() {
         </section>
         <section ref={usageRef}>
           <Heading level={2} anchor="usage">
-            Usage
+            用法
           </Heading>
           <p>
-            Color schemes can be defined for the entire document using{" "}
-            <Code display="inline">{`<html data-theme="light">`}</Code> or for specific HTML
-            elements, such as <Code display="inline">{`<article data-theme="dark">`}</Code>.
+            色系可以为整个文档使用 <Code display="inline">{`<html data-theme="light">`}</Code>{" "}
+            定义或者为特定 HTML 元素 使用类似于{" "}
+            <Code display="inline">{`<article data-theme="dark">`}</Code> 的方法定义。
           </p>
           <p>
-            Color schemes at the HTML tag level work great for elements such as <code>a</code>,{" "}
-            <code>button</code>, <code>table</code>, <code>input</code>, <code>textarea</code>,{" "}
-            <code>select</code>, <code>article</code>, <code>dialog</code>, <code>progress</code>.
+            色系对于 HTML 标签级元素如 <code>a</code>， <code>button</code>，<code>table</code>，
+            <code>input</code>，<code>textarea</code>， <code>select</code>，<code>article</code>，
+            <code>dialog</code>，<code>progress</code>也能正常使用。
           </p>
           <p>
             CSS variables specific to the color scheme are assigned to every HTML tag. However, we
@@ -102,7 +102,7 @@ export default function ColorSchemes() {
         </section>
         <section ref={exampleRef}>
           <Heading level={2} anchor="example">
-            Card example
+            Card 范例
           </Heading>
 
           <article data-theme="light" aria-label="Forced light theme example">
