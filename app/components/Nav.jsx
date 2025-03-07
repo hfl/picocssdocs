@@ -55,12 +55,12 @@ export default function Nav({ shouldDisplayDocsVersion = false, ...props }) {
         )}
         <li className="hide-before-sm">
           <Link to="/examples" className="contrast">
-            Examples
+            范例
           </Link>
         </li>
         <li {...(shouldDisplayDocsVersion && { className: "hide-before-sm" })}>
           <Link to="/docs" className="contrast">
-            Docs
+            文档
           </Link>
         </li>
       </ul>

@@ -25,7 +25,7 @@ export default function ThemePreview({ title, ...props }) {
 
   return (
     <section ref={themeRef}>
-      <Heading level={2}>Theme color</Heading>
+      <Heading level={2}>主题色调</Heading>
       <article className={`color-picker component`} aria-label="Custom theme example" {...props}>
         <header>
           {colorFamilies.map((color) => {

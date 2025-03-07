@@ -41,7 +41,7 @@ export default function Aside(props) {
       {...props}
     >
       <header>
-        <Heading level={2}>Documentation</Heading>
+        <Heading level={2}>文档</Heading>
         <Link to="#" aria-label="Close" className="secondary" onClick={onClose}>
           <Close />
         </Link>

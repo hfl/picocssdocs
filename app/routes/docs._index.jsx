@@ -30,11 +30,11 @@ export default function QuickStart() {
     <>
       {/* Header */}
       <Header
-        title="Quick start"
+        title="快速上手"
         description={
           <>
-            Link <code>pico.css</code> manually or via CDN for a dependency-free setup, or use NPM
-            or Composer for advanced&nbsp;usage.
+            手动拷贝 <code>pico.css</code> 到本地或者通过 CDN 引用，或者使用 NPM 或 Composer
+            定制使用。
           </>
         }
       />
@@ -44,27 +44,27 @@ export default function QuickStart() {
         data={[
           {
             anchor: "install-manually",
-            title: "Install manually",
+            title: "手动安装",
             ref: installManuallyRef,
           },
           {
             anchor: "usage-from-cdn",
-            title: "Usage from CDN",
+            title: "从 CDN 引用",
             ref: installFromCdnRef,
           },
           {
             anchor: "install-with-npm",
-            title: "Install with NPM",
+            title: "通过 NPM 安装",
             ref: installWithNpmRef,
           },
           {
             anchor: "install-with-composer",
-            title: "Install with Composer",
+            title: "通过 Composer 安装",
             ref: installWithComposerRef,
           },
           {
             anchor: "starter-html-template",
-            title: "Starter HTML template",
+            title: "起步 HTML 模板",
             ref: starterHtmlTemplateRef,
           },
         ]}
@@ -73,27 +73,25 @@ export default function QuickStart() {
       {/* Content */}
       <Content>
         <section ref={installManuallyRef}>
-          <p>There are 4 ways to get started with pico.css:</p>
+          <p>有四种方式使用 pico.css 起步：</p>
           <Heading level={2} anchor="install-manually">
-            Install manually
+            手动安装
           </Heading>
           <p>
-            <Link to="https://github.com/picocss/pico/archive/refs/heads/main.zip">
-              Download Pico
-            </Link>{" "}
-            and link <code>/css/pico.min.css</code> in the <Code display="inline">{`<head>`}</Code>{" "}
-            of your website.
+            <Link to="https://github.com/picocss/pico/archive/refs/heads/main.zip">下载 Pico</Link>{" "}
+            然后在站点的 <Code display="inline">{`<head>`}</Code> 中链接到{" "}
+            <code>/css/pico.min.css</code>。
           </p>
           <Code className="small">{`<link rel="stylesheet" href="css/pico.min.css">`}</Code>
         </section>
 
         <section ref={installFromCdnRef}>
           <Heading level={2} anchor="usage-from-cdn">
-            Usage from CDN
+            通过 CDN 引用
           </Heading>
           <p>
-            Alternatively, you can use <Link to={cdnBaseUrl}>jsDelivr CDN</Link> to link
-            <code>pico.min.css</code>.
+            下载的替代方法是可以通过使用 <Link to={cdnBaseUrl}>jsDelivr CDN</Link> 托管网站链接到
+            <code>pico.min.css</code>。
           </p>
           <Code>{`<link
   rel="stylesheet"
@@ -103,30 +101,31 @@ export default function QuickStart() {
 
         <section ref={installWithNpmRef}>
           <Heading level={2} anchor="install-with-npm">
-            Install with NPM
+            通过 NPM 安装
           </Heading>
           <Code language="bash" className="small">
             npm install @picocss/pico
           </Code>
-          <p>Or</p>
+          <p>或者</p>
           <Code language="bash" className="small">
             yarn add @picocss/pico
           </Code>
           <p>
-            Then, import Pico into your SCSS file with{" "}
-            <Link to="https://sass-lang.com/documentation/at-rules/use">@use</Link>:
+            然后，用
+            <Link to="https://sass-lang.com/documentation/at-rules/use">@use</Link>
+            引入 Pico 到你的 SCSS 文件中：
           </p>
           <Code language="scss" className="small">
             @use "pico";
           </Code>
           <p>
-            Learn more about the <Link to="/docs/sass">customization with Sass</Link>.
+            有关内容可以了解<Link to="/docs/sass">通过 Sass 定制</Link>。
           </p>
         </section>
 
         <section ref={installWithComposerRef}>
           <Heading level={2} anchor="install-with-composer">
-            Install with Composer
+            通过 Composer 安装
           </Heading>
           <Code language="bash" className="small">
             composer require picocss/pico
@@ -135,7 +134,7 @@ export default function QuickStart() {
 
         <section ref={starterHtmlTemplateRef}>
           <Heading level={2} anchor="starter-html-template">
-            Starter HTML template
+            起步 HTML 模板
           </Heading>
           <Code>{`<!doctype html>
 <html lang="en">

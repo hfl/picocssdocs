@@ -10,7 +10,7 @@ export const meta = () => [
   { title: `RTL (Right-To-Left) ${titleSuffix}` },
   {
     name: "description",
-    content: "Support for Right-To-Left text.",
+    content: "支持从右到左方向文本。",
   },
 ];
 
@@ -18,21 +18,21 @@ export default function Rtl() {
   return (
     <>
       {/* Header */}
-      <Header title="RTL" description="Support for Right-To-Left text." />
+      <Header title="RTL" description="支持从右到左方向文本。" />
 
       {/* Content */}
       <Content>
         <section>
           <p>
-            To enable RTL (Right-To-Left) with Pico, you need to set <code>dir="rtl"</code> on the{" "}
-            <Code display="inline">{`<html>`}</Code> element.
+            Pico 启用 RTL (Right-To-Left)，需要在 <Code display="inline">{`<html>`}</Code>{" "}
+            元素中设置 <code>dir="rtl"</code>。
           </p>
           <Code>{`<!doctype html>
 <html dir="rtl" lang="ar">
   ...
 </html>`}</Code>
 
-          <p>RTL can also be enabled on a per-element basis:</p>
+          <p>RTL 也可以在单独的元素中设置：</p>
           <article aria-label="RTL example" className="component">
             <blockquote dir="rtl" lang="ar">
               “كُنْ كالطير، الذي إذا اعتاد القفز على الأغصان لا يحس بالخطر وليس في ذلك أي تردد،

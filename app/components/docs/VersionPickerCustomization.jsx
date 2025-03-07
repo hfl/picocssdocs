@@ -33,7 +33,7 @@ export default function Customization() {
   return (
     <section ref={customizationRef}>
       <Heading level={2} anchor="configuration">
-        Configuration
+        配置
       </Heading>
       <select name="configuration" onChange={(e) => setBaseIndex(e.target.value)}>
         {baseConfiguration.map(({ name }, index) => (

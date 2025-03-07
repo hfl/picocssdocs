@@ -12,7 +12,7 @@ export default function TableOfContents({ data, ...props }) {
         {({ currentElementIndexInViewport }) => (
           <nav className="is-sticky-above-lg ">
             <details open>
-              <summary>Content</summary>
+              <summary>目录</summary>
               <ul>
                 {data.map((section, index) => (
                   <li key={section.anchor}>

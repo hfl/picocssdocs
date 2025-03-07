@@ -34,37 +34,34 @@ export default function VersionPicker() {
   return (
     <>
       {/* Header */}
-      <Header
-        title="Version picker"
-        description="Easily select the ideal Pico CSS version variant to match your project's needs."
-      />
+      <Header title="Version Picker" description="轻松选择理想的 Pico CSS 版本匹配你的项目需要。" />
 
       {/* Table of content */}
       <TableOfContents
         data={[
           {
             anchor: "",
-            title: "Theme",
+            title: "主题",
             ref: themeRef,
           },
           {
             anchor: "configuration",
-            title: "Configuration",
+            title: "配置",
             ref: customizationRef,
           },
           {
             anchor: "usage-from-cdn",
-            title: "Usage from CDN",
+            title: "从 CDN 引用",
             ref: usageFromCdnRef,
           },
           {
             anchor: "usage-with-sass",
-            title: "Usage with Sass",
+            title: "基于 Sass 使用",
             ref: usageWithSaasRef,
           },
           {
             anchor: "starter-html-template",
-            title: "Starter HTML template",
+            title: "HTML 起步模板",
             ref: starterHtmlTemplateRef,
           },
         ]}

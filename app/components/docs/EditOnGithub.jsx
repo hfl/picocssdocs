@@ -9,8 +9,7 @@ export default function EditOnGithub({ file, ...props }) {
       <p>
         <Link to={`${path}app/routes/${file}`} className="secondary">
           <small>
-            <Edit />
-            Edit this page on GitHub
+            <Edit />在 GitHub 编辑此页
           </small>
         </Link>
       </p>

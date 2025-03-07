@@ -2,9 +2,9 @@ export default function Hero(props) {
   return (
     <section className="examples-hero" {...props}>
       <h1>
-        <mark>Examples</mark>
+        <mark>范例</mark>
       </h1>
-      <p className="secondary">Minimalist templates to discover Pico in action.</p>
+      <p className="secondary">展示 Pico 的迷你模板。</p>
     </section>
   );
 }

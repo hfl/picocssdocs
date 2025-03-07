@@ -61,7 +61,7 @@ export default function Usage() {
       {/*  Usage from CDN */}
       <section ref={usageFromCdnRef}>
         <Heading level={2} anchor="usage-from-cdn">
-          Usage from CDN
+          从 CDN 调用
         </Heading>
         <Code>{`<link
   rel="stylesheet"
@@ -72,7 +72,7 @@ export default function Usage() {
       {/* Usage with Sass */}
       <section ref={usageWithSaasRef}>
         <Heading level={2} anchor="usage-with-sass">
-          Usage with Sass
+          基于 Sass 使用
         </Heading>
         <Code language="scss">{sassCode}</Code>
       </section>
@@ -80,7 +80,7 @@ export default function Usage() {
       {/* Starter HTML template */}
       <section ref={starterHtmlTemplateRef}>
         <Heading level={2} anchor="starter-html-template">
-          Starter HTML template
+          起步 HTML 模板
         </Heading>
         <Code>{`<!doctype html>
 <html lang="en"${conditionalIndex === 1 ? ` class="pico"` : ""}>

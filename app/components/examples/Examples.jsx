@@ -12,21 +12,20 @@ const ExternalLink = ({ url, children, ...props }) => (
 const PreviewLink = ({ url, ...props }) => (
   <ExternalLink className="preview secondary" url={url} {...props}>
     <Eye />
-    Preview
+    预览
   </ExternalLink>
 );
 
 const EditorLink = ({ url, ...props }) => (
   <ExternalLink className="edit secondary" url={url} {...props}>
-    <Edit />
-    Edit in CodeSandbox
+    <Edit />在 CodeSandbox 编辑
   </ExternalLink>
 );
 
 const SourceLink = ({ url, ...props }) => (
   <ExternalLink className="source secondary" url={url} {...props}>
     <GitHub />
-    View source
+    查看源码
   </ExternalLink>
 );
 

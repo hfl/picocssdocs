@@ -7,21 +7,20 @@ export default function Hero(props) {
     <section className="hero" {...props}>
       <div className="hook">
         <h1>
-          <mark>Minimal CSS&nbsp;Framework</mark> <br />
-          for Semantic&nbsp;HTML
+          <mark>迷你 CSS&nbsp;框架</mark> <br />
+          ——面向语义 HTML
         </h1>
         <p className="secondary">
-          A minimalist and lightweight starter&nbsp;kit that prioritizes semantic&nbsp;syntax,
-          making every HTML&nbsp;element responsive and elegant&nbsp;by&nbsp;default.
+          一款迷你轻量级起步工具——优先采用语义语法，默认使每一个 HTML 元素都自适应 和优雅展现。
         </p>
-        <p>Write&nbsp;HTML, Add&nbsp;Pico&nbsp;CSS, and&nbsp;Voilà!</p>
+        <p>编写 HTML，添加 Pico CSS，然后 Voilà！</p>
         <div className="grid ctas">
           <Link to="/docs" role="button">
-            Get Started
+            新手上路
             <ArrowRight />
           </Link>
           <Link to="/examples" role="button" className="contrast">
-            Examples
+            范例
             <ArrowRight />
           </Link>
         </div>

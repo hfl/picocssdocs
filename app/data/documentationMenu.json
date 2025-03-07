@@ -1,61 +1,61 @@
 [
   {
-    "category": "Getting started",
+    "category": "起步",
     "links": [
-      { "label": "Quick start", "route": "/docs" },
-      { "label": "Version picker <mark>New</mark>", "route": "/docs/version-picker" },
-      { "label": "Color schemes", "route": "/docs/color-schemes" },
-      { "label": "Class-less version", "route": "/docs/classless" },
-      { "label": "Conditional styling <mark>New</mark>", "route": "/docs/conditional" },
+      { "label": "快速上手", "route": "/docs" },
+      { "label": "版本挑选 <mark>新</mark>", "route": "/docs/version-picker" },
+      { "label": "色彩方案", "route": "/docs/color-schemes" },
+      { "label": "无类版本", "route": "/docs/classless" },
+      { "label": "条件样式 <mark>新</mark>", "route": "/docs/conditional" },
       { "label": "RTL", "route": "/docs/rtl" }
     ]
   },
   {
-    "category": "Customization",
+    "category": "定制",
     "links": [
-      { "label": "CSS Variables", "route": "/docs/css-variables" },
+      { "label": "CSS 变量", "route": "/docs/css-variables" },
       { "label": "Sass", "route": "/docs/sass" },
-      { "label": "Colors <mark>New</mark>", "route": "/docs/colors" }
+      { "label": "色彩 <mark>新</mark>", "route": "/docs/colors" }
     ]
   },
   {
-    "category": "Layout",
+    "category": "布局",
     "links": [
       { "label": "Container", "route": "/docs/container" },
-      { "label": "Landmarks & section", "route": "/docs/landmarks-section" },
+      { "label": "Landmarks 和 section", "route": "/docs/landmarks-section" },
       { "label": "Grid", "route": "/docs/grid" },
-      { "label": "Overflow auto <mark>New</mark>", "route": "/docs/overflow-auto" }
+      { "label": "自动溢出 <mark>新</mark>", "route": "/docs/overflow-auto" }
     ]
   },
   {
-    "category": "Content",
+    "category": "内容",
     "links": [
-      { "label": "Typography", "route": "/docs/typography" },
-      { "label": "Link", "route": "/docs/link" },
-      { "label": "Button", "route": "/docs/button" },
-      { "label": "Table", "route": "/docs/table" }
+      { "label": "排版", "route": "/docs/typography" },
+      { "label": "链接", "route": "/docs/link" },
+      { "label": "按钮", "route": "/docs/button" },
+      { "label": "表格", "route": "/docs/table" }
     ]
   },
   {
-    "category": "Forms",
+    "category": "表单",
     "links": [
-      { "label": "Overview", "route": "/docs/forms" },
+      { "label": "概览", "route": "/docs/forms" },
       { "label": "Input", "route": "/docs/forms/input" },
       { "label": "Textarea", "route": "/docs/forms/textarea" },
       { "label": "Select", "route": "/docs/forms/select" },
-      { "label": "Checkboxes", "route": "/docs/forms/checkboxes" },
-      { "label": "Radios", "route": "/docs/forms/radios" },
+      { "label": "Checkboxe", "route": "/docs/forms/checkboxes" },
+      { "label": "Radio", "route": "/docs/forms/radios" },
       { "label": "Switch", "route": "/docs/forms/switch" },
       { "label": "Range", "route": "/docs/forms/range" }
     ]
   },
   {
-    "category": "Components",
+    "category": "组件",
     "links": [
       { "label": "Accordion", "route": "/docs/accordion" },
       { "label": "Card", "route": "/docs/card" },
       { "label": "Dropdown", "route": "/docs/dropdown" },
-      { "label": "Group <mark>New</mark>", "route": "/docs/group" },
+      { "label": "Group <mark>新</mark>", "route": "/docs/group" },
       { "label": "Loading", "route": "/docs/loading" },
       { "label": "Modal", "route": "/docs/modal" },
       { "label": "Nav", "route": "/docs/nav" },
@@ -64,9 +64,9 @@
     ]
   },
   {
-    "category": "About",
+    "category": "关于",
     "links": [
-      { "label": "What’s new in v2?", "route": "/docs/v2" },
+      { "label": "在 v2 中由哪些新东西？", "route": "/docs/v2" },
       { "label": "Mission", "route": "/docs/mission" },
       { "label": "Usage scenarios", "route": "/docs/usage-scenarios" },
       { "label": "Brand", "route": "/docs/brand" },
