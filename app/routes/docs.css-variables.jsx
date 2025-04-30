@@ -15,11 +15,10 @@ import { removeLines } from "~/utils";
 const { titleSuffix } = metaData;
 
 export const meta = () => [
-  { title: `CSS variables ${titleSuffix}` },
+  { title: `CSS 变量 ${titleSuffix}` },
   {
     name: "description",
-    content:
-      "Customize Pico's design system with over 130 CSS variables to create a unique look and feel.",
+    content: "Pico 定制设计系统——用 130 多个 CSS 变量创建一个独立无二的外观。",
   },
 ];
 
@@ -39,8 +38,8 @@ export default function CssVariables() {
     <>
       {/* Header */}
       <Header
-        title="CSS variables"
-        description="Customize Pico's design system with over 130 CSS variables to create a unique look&nbsp;and&nbsp;feel."
+        title="CSS 变量"
+        description="Pico 定制设计系统——用 130 多个 CSS 变量创建一个独立无二的外观。"
       />
 
       {/* Table of content */}
@@ -48,22 +47,22 @@ export default function CssVariables() {
         data={[
           {
             anchor: "",
-            title: "Introduction",
+            title: "简介",
             ref: introductionRef,
           },
           {
             anchor: "example",
-            title: "Example",
+            title: "范例",
             ref: exampleRef,
           },
           {
             anchor: "css-variables-for-color-schemes",
-            title: "Color schemes",
+            title: "配色方案",
             ref: cssVariablesForColorSchemesRef,
           },
           {
             anchor: "all-css-variables",
-            title: "All CSS variables",
+            title: "所有 CSS 变量",
             ref: allCssVariablesRef,
           },
         ]}
@@ -73,25 +72,24 @@ export default function CssVariables() {
       <Content>
         <section ref={introductionRef}>
           <p>
-            Pico includes many custom properties (variables) that allow easy access to frequently
-            used values such as <code>font-family</code>, <code>font-size</code>,
-            <code>border-radius</code>, <code>margin</code>, <code>padding</code>, and more.
+            Pico 包含一些定制属性（变量）—— 易定制的常用值，例如 <code>font-family</code>、
+            <code>font-size</code>、<code>border-radius</code>、<code>margin</code>、{" "}
+            <code>padding</code>等等。
           </p>
           <p>
-            All CSS variables are prefixed with <code>pico-</code> to avoid collisions with other
-            CSS frameworks or your own vars. You can remove or customize this prefix by recompiling
-            the CSS files with <Link to="/docs/sass">SASS</Link>.
+            所有 CSS 变量都冠以 <code>pico-</code> 前缀，这样就可以避免同其它 CSS
+            框架或你自己的变量冲突。你可以用 <Link to="/docs/sass">SASS</Link>编译 CSS
+            文件时删除或者定制这个前缀。
           </p>
           <p>
-            You can define the CSS variables within the <code>:root</code> selector to apply the
-            changes globally or overwrite the CSS variables on specific selectors to apply the
-            changes locally.
+            你可以在 <code>:root</code> 选择器内定义 CSS
+            变量以便在全局应用修改或者针对特定选择器覆盖 CSS 变量来在地应用修改。
           </p>
         </section>
 
         <section ref={exampleRef}>
           <Heading level={2} anchor="example">
-            Example
+            范例
           </Heading>
           <article aria-label="Button colors example" className="component" id="css-var-example">
             <style>{`
@@ -150,18 +148,16 @@ export default function CssVariables() {
 
         <section ref={cssVariablesForColorSchemesRef}>
           <Heading level={2} anchor="css-variables-for-color-schemes">
-            CSS variables for color schemes
+            基于配色方案的 CSS 变量
           </Heading>
-          <p>
-            To add or edit CSS variables for light mode only (the default mode), define them inside:
-          </p>
+          <p>添加或者编辑亮色模式下的 CSS 变量（默认模式），像下面这样：</p>
           <Code language="css">{`/* Light color scheme (Default) */
 /* Can be forced with data-theme="light" */
 [data-theme="light"],
 :root:not([data-theme="dark"]) {
  ...
 }`}</Code>
-          <p>To add or edit CSS variables for dark mode, you need to define them twice.</p>
+          <p>添加或编辑暗色模式的 CSS 变量，你需要定义它们两次。</p>
           <p>
             The first inclusion is in the <code>{`@media`}</code>query that checks if the user has
             dark mode enabled through their device settings with{" "}
@@ -208,23 +204,21 @@ export default function CssVariables() {
 
         <section ref={allCssVariablesRef}>
           <Heading level={2} anchor="all-css-variables">
-            All CSS variables
+            所有 CSS 变量
           </Heading>
-          <p>There are two categories of CSS variables:</p>
+          <p>共有两类 CSS 变量：</p>
           <ol>
             <li>
-              <strong>Style variables</strong>, which do not depend on the color scheme,
+              <strong>样式变量</strong>——不依赖配色方案；
             </li>
             <li>
-              <strong>Color variables</strong>, which depend on the color scheme.
+              <strong>Color 变量</strong>——依赖配色方案。
             </li>
           </ol>
-          <p style={{ marginBottom: "2rem" }}>
-            Here is the list of all CSS variables used in Pico:
-          </p>
+          <p style={{ marginBottom: "2rem" }}>这是所有 Pico 的 CSS 变量：</p>
           <details>
             <summary role="button" className="secondary">
-              Default styles CSS variables
+              默认样式的 CSS 变量
             </summary>
             <Code language="css">
               {removeLines({
@@ -236,7 +230,7 @@ export default function CssVariables() {
           </details>
           <details>
             <summary role="button" className="secondary">
-              Default colors CSS variables
+              默认颜色的 CSS 变量
             </summary>
             <Code language="css">
               {removeLines({

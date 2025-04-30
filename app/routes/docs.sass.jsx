@@ -17,8 +17,7 @@ export const meta = () => [
   { title: `Sass ${titleSuffix}` },
   {
     name: "description",
-    content:
-      "Build your own minimal design system by compiling a custom version of Pico CSS framework with Sass.",
+    content: "通过 SASS 编译定制版本的 Pico CSS 框架构建你自己的最小设计系统。",
   },
 ];
 
@@ -36,8 +35,8 @@ export default function Sass() {
         title="Sass"
         description={
           <>
-            Build your own minimal design&nbsp;system by compiling a custom version of
-            Pico&nbsp;CSS&nbsp;framework with&nbsp;<Link to="https://sass-lang.com/">SASS</Link>.
+            通过 <Link to="https://sass-lang.com/">SASS</Link> 编译定制版本的 Pico CSS
+            框架构建你自己的最小设计系统。
           </>
         }
       />
@@ -47,7 +46,7 @@ export default function Sass() {
         data={[
           {
             anchor: "",
-            title: "Introduction",
+            title: "简介",
             ref: introductionRef,
           },
           {
@@ -57,17 +56,17 @@ export default function Sass() {
           },
           {
             anchor: "settings",
-            title: "Settings",
+            title: "配置",
             ref: settingsRef,
           },
           {
             anchor: "theme-color",
-            title: "Theme color",
+            title: "主题颜色",
             ref: themeColorRef,
           },
           {
             anchor: "custom-theme",
-            title: "Custom theme",
+            title: "定制主题",
             ref: customThemeRef,
           },
         ]}

@@ -14,8 +14,7 @@ export const meta = () => [
   { title: `Landmarks & section ${titleSuffix}` },
   {
     name: "description",
-    content:
-      "Structure your pages with semantic landmarks and sections for better accessibility and graceful spacings.",
+    content: "用语义 landmark 和 section 构建网页以便更方便访问和优雅显示。",
   },
 ];
 
@@ -29,7 +28,7 @@ export default function LandmarksAndSection() {
       {/* Header */}
       <Header
         title="Landmarks & section"
-        description="Structure your pages with semantic landmarks and sections for better&nbsp;accessibility and graceful&nbsp;spacings."
+        description="用语义 landmark 和 section 构建网页以便更方便访问和优雅显示。"
       />
 
       {/* Table of content */}
@@ -37,12 +36,12 @@ export default function LandmarksAndSection() {
         data={[
           {
             anchor: "",
-            title: "Landmarks",
+            title: "Landmark",
             ref: landmarksRef,
           },
           {
             anchor: "root-container",
-            title: "Custom root container",
+            title: "定制 root container",
             ref: rootContainerRef,
           },
           {
@@ -57,10 +56,9 @@ export default function LandmarksAndSection() {
       <Content>
         <section ref={landmarksRef}>
           <p>
-            <Code display="inline">{`<header>`}</Code>, <Code display="inline">{`<main>`}</Code> and{" "}
-            <Code display="inline">{`<footer>`}</Code> as direct children of{" "}
-            <Code display="inline">{`<body>`}</Code> provide a responsive vertical{" "}
-            <code>padding</code>
+            <Code display="inline">{`<header>`}</Code>、<Code display="inline">{`<main>`}</Code> 和{" "}
+            <Code display="inline">{`<footer>`}</Code> 做为 <Code display="inline">{`<body>`}</Code>{" "}
+            的直接子元素提供了一个自适应的竖向 <code>padding</code>
           </p>
           <Code>{`<body>
   <header>...</header>
@@ -74,16 +72,15 @@ export default function LandmarksAndSection() {
             Root container
           </Heading>
           <p>
-            If you need to customize the default root container for{" "}
-            <Code display="inline">{`<header>`}</Code>, <Code display="inline">{`<main>`}</Code>,
-            and <Code display="inline">{`<footer>`}</Code>, you can recompile Pico with another CSS
-            selector.
+            如果你需要为 <Code display="inline">{`<header>`}</Code>、
+            <Code display="inline">{`<main>`}</Code>和<Code display="inline">{`<footer>`}</Code>
+            定制默认的 root container，你可以用另一个 CSS 选择器重新编译 Pico。
           </p>
 
           <p>
-            Useful for <a href="https://reactjs.org/">React</a>,{" "}
-            <a href="https://www.gatsbyjs.com/">Gatsby</a>, or{" "}
-            <a href="https://nextjs.org/">Next.js</a>.
+            这对 <a href="https://reactjs.org/">React</a>、{" "}
+            <a href="https://www.gatsbyjs.com/">Gatsby</a> 或者{" "}
+            <a href="https://nextjs.org/">Next.js</a>都很有用。
           </p>
           <Code language="scss">{`/* Custom Class-less version for React */
 @use "pico" with (
@@ -99,7 +96,7 @@ export default function LandmarksAndSection() {
   $enable-classes: false
 )`}</Code>
 
-          <p>The code above will compile Pico with the containers defined like this:</p>
+          <p>上面代码将为 Pico 编译如下容器：</p>
           <Code language="css">{`/* Containers */
 #root > header,
 #root > main,
@@ -107,8 +104,7 @@ export default function LandmarksAndSection() {
   ...
 }`}</Code>
           <p>
-            Learn more about{" "}
-            <Link to="/docs/sass">compiling a custom version of Pico with SASS</Link>.
+            学习更多内容在 <Link to="/docs/sass">用 SASS 编译定制版本 Pico</Link>。
           </p>
         </section>
 
@@ -117,8 +113,8 @@ export default function LandmarksAndSection() {
             Section
           </Heading>
           <p>
-            <Code display="inline">{`<section>`}</Code> provides a responsive{" "}
-            <code>margin-bottom</code> to separate your sections.
+            <Code display="inline">{`<section>`}</Code> 提供一个自适应 <code>margin-bottom</code>{" "}
+            来分离你的各个 section。
           </p>
         </section>
 

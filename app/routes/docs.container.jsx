@@ -11,47 +11,48 @@ import metaData from "~/data/meta";
 const { titleSuffix } = metaData;
 
 export const meta = () => [
-  { title: `Container ${titleSuffix}` },
+  { title: `容器（Container） ${titleSuffix}` },
   {
     name: "description",
-    content: "Use .container for a centered viewport or .container-fluid for a full-width layout.",
+    content:
+      "使用 .container 会得到一个剧中的视口或者使用 .container-fluid 得到一个 full-width 布局。",
   },
 ];
 
 const breakpoints = [
   {
     key: "xs",
-    name: "Extra small",
+    name: "极小屏",
     breakpoint: "<576px",
     viewport: "100%",
   },
   {
     key: "sm",
-    name: "Small",
+    name: "小屏",
     breakpoint: "≥576px",
     viewport: "510px",
   },
   {
     key: "md",
-    name: "Medium",
+    name: "中屏",
     breakpoint: "≥768px",
     viewport: "700px",
   },
   {
     key: "lg",
-    name: "Large",
+    name: "大屏",
     breakpoint: "≥1024px",
     viewport: "950px",
   },
   {
     key: "xl",
-    name: "Extra large",
+    name: "极大屏",
     breakpoint: "≥1280px",
     viewport: "1200px",
   },
   {
     key: "xxl",
-    name: "Extra extra large",
+    name: "巨屏",
     breakpoint: "≥1536px",
     viewport: "1450px",
   },
@@ -67,11 +68,11 @@ export default function Container() {
     <>
       {/* Header */}
       <Header
-        title="Container"
+        title="容器（Container）"
         description={
           <>
-            Use <code>.container</code> for a centered&nbsp;viewport or{" "}
-            <code>.container-fluid</code> for a full-width&nbsp;layout.
+            使用 <code>.container</code> 会得到一个居中的视口，或者用 <code>.container-fluid</code>{" "}
+            得到一个 full-width&nbsp;布局。
           </>
         }
       />
@@ -81,22 +82,22 @@ export default function Container() {
         data={[
           {
             anchor: "",
-            title: "Breakpoints",
+            title: "断点",
             ref: breakpointsRef,
           },
           {
             anchor: "fixed-width",
-            title: "Fixed width",
+            title: "定宽",
             ref: fixedRef,
           },
           {
             anchor: "fluid-width",
-            title: "Fluid width",
+            title: "流式宽度",
             ref: fluidRef,
           },
           {
             anchor: "semantic-containers",
-            title: "Semantic containers",
+            title: "语义容器",
             ref: semanticRef,
           },
         ]}
@@ -106,15 +107,14 @@ export default function Container() {
       <Content>
         <section ref={breakpointsRef}>
           <p>
-            Pico includes six default breakpoints. These breakpoints can be customized with{" "}
-            <Link to="/docs/sass">Sass</Link>.
+            Pico 有六个断点。这些断点可以通过 <Link to="/docs/sass">Sass</Link> 定制。
           </p>
           <table className="striped">
             <thead>
               <tr>
-                <th>Device</th>
-                <th>Breakpoint</th>
-                <th>Viewport</th>
+                <th>设备</th>
+                <th>断点</th>
+                <th>视口</th>
               </tr>
             </thead>
             <tbody>
@@ -128,20 +128,18 @@ export default function Container() {
             </tbody>
           </table>
           <p>
-            <code>.container</code> and{" "}
-            <code>.container-fluid</code> are not available in the{" "}
-            <Link to="/docs/classless">class&#8209;less&nbsp;version</Link> (see{" "}
-            <Link to="#semantic-containers">Semantic containers</Link> for an alternative).
+            <code>.container</code> 和 <code>.container-fluid</code> 在{" "}
+            <Link to="/docs/classless">无类版本</Link> （查看{" "}
+            <Link to="#semantic-containers">语义容器</Link>）不可用。
           </p>
         </section>
 
         <section ref={fixedRef}>
           <Heading level={2} anchor="fixed-width">
-            Fixed width
+            定宽
           </Heading>
           <p>
-            <code>.container</code> provides a centered container with a fixed
-            width.
+            <code>.container</code> 提供居中定宽容器。
           </p>
           <Code>{`<body>
   <main class="container">
@@ -152,10 +150,10 @@ export default function Container() {
 
         <section ref={fluidRef}>
           <Heading level={2} anchor="fluid-width">
-            Fluid width
+            流体宽度
           </Heading>
           <p>
-            <code>.container-fluid</code> provides a full-width container.
+            <code>.container-fluid</code> 提供了满屏宽度容器。
           </p>
           <Code>{`<body>
   <main class="container-fluid">
@@ -166,16 +164,15 @@ export default function Container() {
 
         <section ref={semanticRef}>
           <Heading level={2} anchor="semantic-containers">
-            Semantic containers
+            语义容器
           </Heading>
           <p>
-            In the classless version, <Code display="inline">{`<header>`}</Code>,{" "}
-            <Code display="inline">{`<main>`}</Code>, and <Code display="inline">{`<footer>`}</Code>{" "}
-            inside <Code display="inline">{`<body>`}</Code> act as containers to define a centered
-            or a fluid viewport.
+            在无类版本里，<Code display="inline">{`<body>`}</Code>内的
+            <Code display="inline">{`<header>`}</Code>、 <Code display="inline">{`<main>`}</Code> 和{" "}
+            <Code display="inline">{`<footer>`}</Code> 做为容器定义了居中或者流体的视口。
           </p>
           <p>
-            See <Link to="/docs/classless">Class-less version</Link>.
+            查看 <Link to="/docs/classless">无类版本</Link>。
           </p>
         </section>
 

@@ -95,26 +95,23 @@ export default function Conditional() {
             类做为容器来限制样式的使用。
           </p>
           <p>
-            The remaining minimal <code>:root</code> reset ensures typography consistency across
-            your entire site.
+            保留最小化的 <code>:root</code> 重置以确保整个网站的一致性。
           </p>
           <p>
-            See the <Link to="/docs/version-picker">version picker</Link> to easily select the ideal
-            Pico CSS version variant to match your project's needs.
+            查看 <Link to="/docs/version-picker">版本选择</Link> 以方便根据你的项目需求选择合适的
+            Pico CSS 版本。
           </p>
         </section>
 
         {/* Install manually */}
         <section ref={installManuallyRef}>
           <Heading level={2} anchor="local-setup">
-            Install manually
+            手动安装
           </Heading>
           <p>
-            <Link to="https://github.com/picocss/pico/archive/refs/heads/v2.zip">
-              Download Pico
-            </Link>{" "}
-            and link <code>/css/pico.conditional.min.css</code> in the{" "}
-            <Code display="inline">{`<head>`}</Code> of your website.
+            <Link to="https://github.com/picocss/pico/archive/refs/heads/v2.zip">下载 Pico</Link>{" "}
+            ，然后在你的站点的 <Code display="inline">{`<head>`}</Code>
+            部分链接样式表文件 <code>/css/pico.conditional.min.css</code>
           </p>
           <Code className="small">{`<link rel="stylesheet" href="css/pico.conditional.min.css">`}</Code>
         </section>
@@ -122,11 +119,11 @@ export default function Conditional() {
         {/* Usage from CDN */}
         <section ref={installFromCdnRef}>
           <Heading level={2} anchor="usage-from-cdn">
-            Usage from CDN
+            从 CDN 在线使用
           </Heading>
           <p>
-            Alternatively, you can use <Link to={cdnBaseUrl}>jsDelivr CDN</Link> to link
-            <code>pico.conditional.min.css</code>.
+            当然，你也可以使用 <Link to={cdnBaseUrl}>jsDelivr CDN</Link> 站点资源直接添加链接到
+            <code>pico.conditional.min.css</code> 文件。
           </p>
           <Code>{`<link
   rel="stylesheet"
@@ -136,7 +133,7 @@ export default function Conditional() {
         {/* Usage with Sass */}
         <section ref={usageWithSaasRef}>
           <Heading level={2} anchor="usage-with-sass">
-            Usage with Sass
+            利用 Sass 使用
           </Heading>
           <Code language="scss">{`@use "pico" with (
   $parent-selector: ".pico"
@@ -146,7 +143,7 @@ export default function Conditional() {
         {/* Starter HTML template */}
         <section ref={starterHtmlTemplateRef}>
           <Heading level={2} anchor="starter-html-template">
-            Starter HTML template
+            起步 HTML 模板
           </Heading>
           <Code>{`<!doctype html>
 <html lang="en">
@@ -173,9 +170,9 @@ export default function Conditional() {
         {/* Examples */}
         <section ref={examplesRef}>
           <Heading level={2} anchor="examples">
-            Examples
+            范例
           </Heading>
-          <p>Example with Pico styles:</p>
+          <p>使用 Pico 样式范例：</p>
           <article aria-label="Styled example" className="component">
             <form>
               <input type="text" name="text" placeholder="Text" aria-label="Text" />
@@ -184,7 +181,7 @@ export default function Conditional() {
   <input type="text" name="text" placeholder="Text" aria-label="Text" />
 </form>`}</Code>
           </article>
-          <p>Example without Pico styles:</p>
+          <p>不使用 Pico 样式范例：</p>
           <article aria-label="Unstyled example" className="component">
             <form>
               <input
@@ -204,17 +201,17 @@ export default function Conditional() {
         {/* Demo */}
         <section ref={demoRef}>
           <Heading level={2} anchor="demo">
-            Demo
+            演示
           </Heading>
           <ul>
             <li>
-              <Link to={conditionalExample.links.preview}>Preview</Link>
+              <Link to={conditionalExample.links.preview}>预览</Link>
             </li>
             <li>
-              <Link to={conditionalExample.links.editor}>Edit in CodeSandbox</Link>
+              <Link to={conditionalExample.links.editor}>在 CodeSandbox 编辑</Link>
             </li>
             <li>
-              <Link to={conditionalExample.links.source}>View source</Link>
+              <Link to={conditionalExample.links.source}>查看源码</Link>
             </li>
           </ul>
         </section>
