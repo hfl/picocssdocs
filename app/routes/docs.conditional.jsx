@@ -14,12 +14,11 @@ const { titleSuffix, cdnBaseUrl } = metaData;
 export const meta = () => [
   {
     title: `
-  Conditional styling ${titleSuffix}`,
+  条件样式 ${titleSuffix}`,
   },
   {
     name: "description",
-    content:
-      "Apply Pico CSS styles selectively by wrapping elements in a .pico container, ideal for mixed-style environments.",
+    content: "选择性的通过在一个包裹元素的容器上应用 .pico 样式，完美的融入Pico CSS 样式。",
   },
 ];
 
@@ -37,11 +36,11 @@ export default function Conditional() {
     <>
       {/* Header */}
       <Header
-        title="Conditional styling"
+        title="条件样式"
         description={
           <>
-            Apply Pico CSS styles selectively by wrapping elements in a <code>.pico</code>{" "}
-            container, ideal for mixed-style environments.
+            选择性的通过在一个包裹元素的容器上应用 <code>.pico</code> 样式，完美的融入Pico CSS
+            样式。
           </>
         }
       />
@@ -51,37 +50,37 @@ export default function Conditional() {
         data={[
           {
             anchor: "",
-            title: "Introduction",
+            title: "简介",
             ref: introductionRef,
           },
           {
             anchor: "local-setup",
-            title: "Install manually",
+            title: "手动安装",
             ref: installManuallyRef,
           },
           {
             anchor: "usage-from-cdn",
-            title: "Usage from CDN",
+            title: "从 CDN 在线使用",
             ref: installFromCdnRef,
           },
           {
             anchor: "usage-with-sass",
-            title: "Usage with Sass",
+            title: "利用 Sass 使用",
             ref: usageWithSaasRef,
           },
           {
             anchor: "starter-html-template",
-            title: "Starter HTML template",
+            title: "起步 HTML 模板",
             ref: starterHtmlTemplateRef,
           },
           {
             anchor: "examples",
-            title: "Examples",
+            title: "范例",
             ref: examplesRef,
           },
           {
             anchor: "demo",
-            title: "Demo",
+            title: "演示",
             ref: demoRef,
           },
         ]}
@@ -92,8 +91,8 @@ export default function Conditional() {
         {/* Introduction */}
         <section ref={introductionRef}>
           <p>
-            Pico offers a <code>.conditional</code> version that restricts styling to elements
-            within <code>.pico</code> class containers.
+            Pico 提供一个 <code>.conditional</code> 版本——通过在元素上使用 <code>.pico</code>{" "}
+            类做为容器来限制样式的使用。
           </p>
           <p>
             The remaining minimal <code>:root</code> reset ensures typography consistency across

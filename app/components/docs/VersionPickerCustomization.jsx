@@ -46,7 +46,7 @@ export default function Customization() {
       <fieldset>
         <label>
           <input name="conditional" type="checkbox" role="switch" onChange={handleCheckboxChange} />
-          Conditional Styling
+          条件样式
         </label>
       </fieldset>
       <small>{parse(conditionalConfiguration[conditionalIndex].description, parseOptions)}</small>

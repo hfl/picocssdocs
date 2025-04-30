@@ -12,24 +12,24 @@ const VersionPickerProvider = ({ children, value }) => {
 
   const baseConfiguration = [
     {
-      name: "Regular, with classes",
+      name: "常规版本——有类",
       filePattern: "",
-      description: "The default version of Pico CSS, with all components and classes.",
+      description: "默认 Pico CSS 样式——具备所有组件和类。",
       sassProperties: {},
     },
     {
-      name: "Class-less, with centered viewports",
+      name: "无类版本——具有居中视口功能",
       filePattern: "classless.",
-      description: `The <a href="/docs/classless">class-less version</a> for HTML purists with centered viewports.`,
+      description: `<a href="/docs/classless">无类版本</a>为纯粹 HTML 者打造，具有视口居中功能。`,
       sassProperties: {
         "$enable-semantic-container": true,
         "$enable-classes": false,
       },
     },
     {
-      name: "Class-less, with fluid viewport",
+      name: "无类视口流版本",
       filePattern: "fluid.classless.",
-      description: `The <a href="/docs/classless">class-less version</a> for HTML purists with a fluid viewport.`,
+      description: `<a href="/docs/classless">无类版本</a>为纯粹 HTML 者打造的具有视口流排版功能。`,
       sassProperties: {
         "$enable-semantic-container": true,
         "$enable-viewport": false,
@@ -42,13 +42,13 @@ const VersionPickerProvider = ({ children, value }) => {
     {
       name: "No",
       filePattern: "",
-      description: "The default version applies Pico styles to every HTML element.",
+      description: "默认版本——为每个 HTML 元素都应用了 Pico 样式。",
       sassProperties: {},
     },
     {
       name: "Yes",
       filePattern: "conditional.",
-      description: `This version restricts Pico styling to HTML elements within <code>.pico</code> containers only. <a href="/docs/conditional">See&nbsp;here</a>.`,
+      description: `此版本限制使用 Pico 样式，只有在应用了 <code>.pico</code> 的 HTML 元素内部才起作用。<a href="/docs/conditional">详细内容查看这里</a>。`,
       sassProperties: {
         "$parent-selector": `".pico"`,
       },
@@ -85,4 +85,4 @@ const VersionPickerProvider = ({ children, value }) => {
   );
 };
 
-export { VersionPickerProvider, useVersionPicker };
+export { useVersionPicker, VersionPickerProvider };

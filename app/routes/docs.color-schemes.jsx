@@ -12,11 +12,10 @@ import metaData from "~/data/meta";
 const { titleSuffix } = metaData;
 
 export const meta = () => [
-  { title: `Color schemes ${titleSuffix}` },
+  { title: `色系 ${titleSuffix}` },
   {
     name: "description",
-    content:
-      "Pico CSS comes with both Light and Dark color schemes, automatically enabled based on user preferences.",
+    content: "Pico CSS 自带两种色系——亮色（Light）和暗色（Dark），自动启用用户配置。",
   },
 ];
 
@@ -87,13 +86,12 @@ export default function ColorSchemes() {
             <code>dialog</code>，<code>progress</code>也能正常使用。
           </p>
           <p>
-            CSS variables specific to the color scheme are assigned to every HTML tag. However, we
-            have not enforced specific background and color settings across all HTML tags to
-            maintain transparent backgrounds and ensure colors are inherited from the parent tag.
+            色系针对每个 HTML 标签定制了 CSS
+            变量。但是我们不去强制设置背景色和前景色，而是通过透明背景来从父标签继承。
           </p>
           <p>
-            For some other HTML tags, you might need to explicitly set <code>background-color</code>{" "}
-            and <code>color</code>.
+            对于某些 HTML 标签，根据需求可能要有针对性的设定 <code>background-color</code> 和{" "}
+            <code>color</code>。
           </p>
           <Code language="css">{`section {
   background-color: var(--pico-background-color);

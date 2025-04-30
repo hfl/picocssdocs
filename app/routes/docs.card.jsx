@@ -10,11 +10,10 @@ import metaData from "~/data/meta";
 const { titleSuffix } = metaData;
 
 export const meta = () => [
-  { title: `Card ${titleSuffix}` },
+  { title: `卡片（Card） ${titleSuffix}` },
   {
     name: "description",
-    content:
-      "Create flexible cards with a semantic markup that provides graceful spacings across various devices and viewports.",
+    content: "用语义标记创建优雅的跨设备和视口的弹性卡片（Card）。",
   },
 ];
 
@@ -26,8 +25,8 @@ export default function Card() {
     <>
       {/* Header */}
       <Header
-        title="Card"
-        description="Create flexible cards with a semantic markup that provides graceful spacings across various devices and viewports."
+        title="卡片（Card）"
+        description="用语义标记创建优雅的跨设备和视口的弹性卡片（Card）。"
       />
 
       {/* Table of contents */}
@@ -41,15 +40,15 @@ export default function Card() {
       {/* Content */}
       <Content>
         <section ref={syntaxRef}>
-          <article aria-label="Card example">I’m a card!</article>
-          <Code className="small">{`<article>I’m a card!</article>`}</Code>
+          <article aria-label="Card example">我是一个卡片（Card）！</article>
+          <Code className="small">{`<article>我是一个卡片（Card）！</article>`}</Code>
         </section>
 
         <section ref={sectioningRef}>
           <p>
-            You can use <Code display="inline">{`<header>`}</Code> and{" "}
-            <Code display="inline">{`<footer>`}</Code> inside{" "}
-            <Code display="inline">{`<article>`}</Code>.
+            你可以在 <Code display="inline">{`<article>`}</Code>里使用{" "}
+            <Code display="inline">{`<header>`}</Code> 和 <Code display="inline">{`<footer>`}</Code>
+            。
           </p>
           <Heading level={2} anchor="sectioning">
             Sectioning

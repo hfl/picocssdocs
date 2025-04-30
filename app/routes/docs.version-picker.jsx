@@ -13,10 +13,10 @@ import colorPickerStyles from "~/styles/css/docs/color-picker.css";
 const { titleSuffix } = metaData;
 
 export const meta = () => [
-  { title: `Version picker ${titleSuffix}` },
+  { title: `版本选择 ${titleSuffix}` },
   {
     name: "description",
-    content: "Easily select the ideal Pico CSS version variant to match your project's needs.",
+    content: "轻松选择理想的 Pico CSS 版本匹配你的项目需要。",
   },
 ];
 
@@ -34,7 +34,7 @@ export default function VersionPicker() {
   return (
     <>
       {/* Header */}
-      <Header title="Version Picker" description="轻松选择理想的 Pico CSS 版本匹配你的项目需要。" />
+      <Header title="版本选择" description="轻松选择理想的 Pico CSS 版本匹配你的项目需要。" />
 
       {/* Table of content */}
       <TableOfContents

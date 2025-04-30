@@ -27,8 +27,8 @@ export default function Accordion() {
     <>
       {/* Header */}
       <Header
-        title="Accordions"
-        description="Toggle sections of content in pure&nbsp;HTML, without JavaScript, using minimal and semantic&nbsp;markup."
+        title="折叠签（Accordion）"
+        description="用最少的纯 HTML 语义标签且无 Javascript 支持实现内容折叠签。"
       />
 
       {/* Table of content */}
@@ -93,12 +93,12 @@ export default function Accordion() {
 
         <section ref={buttonVariantsRef}>
           <Heading level={2} anchor="button-variants">
-            Button variants
+            Button 变体
           </Heading>
 
           <p>
-            <code>role="button"</code> can be used to turn{" "}
-            <Code display="inline">{`<summary>`}</Code> into a button.
+            <code>role="button"</code> 可用于转换 <Code display="inline">{`<summary>`}</Code>{" "}
+            为一个按钮（button）。
           </p>
           <article aria-label="Accordions buttons example" className="component">
             <details>
@@ -116,9 +116,8 @@ export default function Accordion() {
 </details>`}</Code>
           </article>
           <p>
-            Like regular buttons, they come with <code>.secondary</code>, <code>.contrast</code>,
-            and <code>.outline</code> (Not available in the{" "}
-            <Link to="/docs/classless">class-less version</Link>).
+            如常用按钮一样，可以使用 <code>.secondary</code>、 <code>.contrast</code>和{" "}
+            <code>.outline</code> （在 <Link to="/docs/classless">无类版</Link>中不可用）。
           </p>
           <article aria-label="Accordions buttons example" className="component">
             <details>
